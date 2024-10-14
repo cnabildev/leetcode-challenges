@@ -1,14 +1,38 @@
-import java.util.Arrays;
-
-public class Main {
-
+class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums1 = new int[]{1, 2, 3, 0, 0, 0};
-        int m = 3;
-        int[] nums2 = new int[]{2, 5, 6};
-        int n = 3;
-        solution.merge(nums1, m, nums2, n);
-        System.out.println(Arrays.toString(nums1));
+        String cat = "cat";
+        String tac = "tac";
+
+        Boolean result = solution.isAnagram(tac, cat);
+        System.out.println(result);
+    }
+
+    public boolean isAnagram(String s, String t) {
+
+        // if strings has not the same length return false
+        if (s.length() != t.length()) {
+            return false;
+        }
+        // create an array if 26 characters and fill it with false
+        int[] map = new int[26];
+
+        // loop through the strings
+        for (int i = 0; i < s.length(); i++) {
+            // get the char from the string
+            int s_char = s.charAt(i) - 'a';
+            int t_char = t.charAt(i) - 'a';
+            map[s_char]++;
+            map[t_char]--;
+        }
+
+        // loop through the map
+        for (int i = 0; i < map.length; i++) {
+            // if the map is not 0 return false
+            if (map[i] != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }

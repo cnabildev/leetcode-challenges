@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MergeSortedArray/MergeSortedArray.iml" filepath="$PROJECT_DIR$/MergeSortedArray/MergeSortedArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoveDuplicatesfromSortedArray/RemoveDuplicatesfromSortedArray.iml" filepath="$PROJECT_DIR$/RemoveDuplicatesfromSortedArray/RemoveDuplicatesfromSortedArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/RemoveElement/RemoveElement.iml" filepath="$PROJECT_DIR$/RemoveElement/RemoveElement.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode-challenges.iml" filepath="$PROJECT_DIR$/leetcode-challenges.iml" />
     </modules>
